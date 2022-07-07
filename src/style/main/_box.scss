@@ -1,0 +1,112 @@
+.infoBox {
+  padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
+
+  &:nth-child(2n) {
+    background-color: #f7f7f7;
+
+    &:before {
+      background: url(img/bottom-white.png) repeat;
+      content: "";
+      height: 7px;
+      left: 0;
+      position: absolute;
+      top: 0px;
+      // transform: rotateX(180deg);
+      width: 100%;
+      z-index: 9;
+    }
+
+    &:after {
+      background: url(img/bottom-white.png) repeat;
+      content: "";
+      height: 7px;
+      left: 0;
+      position: absolute;
+      bottom: 0px;
+      transform: rotateX(180deg);
+      width: 100%;
+      z-index: 9;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &_hideAfter:after {
+    display: none !important;
+  }
+
+  &Inner {
+    max-width: $maxWidth;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      margin: 20px 0;
+
+      @media all and (max-width: 959px) {
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+
+  &Content {
+    width: 50%;
+    padding: 0 20px 0 0;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    p {
+      margin: 10px 0;
+    }
+
+    @media all and (max-width: 959px) {
+      width: auto;
+      padding: 20px 0 0 0;
+    }
+
+    @media all and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &Media {
+    width: 50%;
+    padding: 0 0 0 20px;
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 -10px;
+      flex-wrap: wrap;
+
+      a {
+        width: calc(33.33% - 20px);
+        box-shadow: 0 10px 20px #b9bbbe;
+        margin: 10px;
+        display: block;
+
+        img {
+          display: block;
+        }
+      }
+    }
+
+    @media all and (max-width: 959px) {
+      width: auto;
+      padding: 20px 0 0 0;
+    }
+  }
+}

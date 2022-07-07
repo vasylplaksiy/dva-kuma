@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  
+  &:before {
+    background: url(img/bottom-grey.png) repeat;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    // transform: rotateX(180deg);
+    width: 100%;
+    z-index: 9;
+  }
+
+  &Media {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @media all and (max-width: 959px) {
+      width: auto;
+    }
+  }
+
+  &Map {
+    width: 50%;
+    position: relative;
+
+    @media all and (max-width: 959px) {
+      padding: 0;
+      width: auto;
+    }
+  }
+}
+
+#contactMap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+
+  @media all and (max-width: 959px) {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100vw;
+    height: 300px;
+    margin: 0;
+  }
+}
+

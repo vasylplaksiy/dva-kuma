@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 8" width="9" height="8">
+	<title>path-white-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="shp0" d="M0.13 3.92L2.9 6.92C3.08 7.13 3.43 7.15 3.64 6.97C3.84 6.79 3.86 6.45 3.67 6.26L1.67 4.09L8.48 4.09C8.77 4.09 9 3.87 9 3.59C9 3.31 8.77 3.09 8.48 3.09L1.67 3.09L3.67 0.92C3.86 0.73 3.84 0.39 3.63 0.21C3.42 0.04 3.08 0.05 2.9 0.26L0.13 3.26C-0.05 3.5 -0.04 3.72 0.13 3.92Z" />
+</svg>

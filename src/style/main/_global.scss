@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+button,
+input,
+select,
+textarea {
+  font: $mainFont;
+}
+
+*:after,
+*:before,
+body,
+body * {
+  box-sizing: border-box;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 200 / 100), only screen and (min-device-pixel-ratio: 1.5) {
+
+  .dpiTest {
+    width: 20px;
+  }
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-width: 280px;
+}
+
+body,
+body * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font: $mainFont;
+  color: $mainColor;
+  background: $mainBgColor;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.tac {
+  text-align: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 200 / 100), only screen and (min-device-pixel-ratio: 1.5) {
+  .dpiTest {
+    width: 20px;
+  }
+}
+
+.showAjaxPopup {
+  cursor: pointer;
+}
+
+.lazyImg {
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+.content {
+  overflow: hidden;
+}
+
+button, a, img {
+  outline: none !important;
+}
+
+// style scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e3e3e3;
+  //border: solid 1px transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  //border: solid 1px #fff;
+  // border-width: 0 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8c8e98;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #317BE9 ;
+}
+
+body * {
+  ::-webkit-scrollbar {
+    width: 4px;
+    background: #e3e3e3;
+    //border: solid 1px transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border: solid 1px #fff;
+    border-width: 0 1px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8c8e98;
+    cursor: pointer;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #317BE9;
+  }
+}
